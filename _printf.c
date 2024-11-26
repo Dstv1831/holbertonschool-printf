@@ -124,7 +124,7 @@ int print_number(int n)
     }
     else
     {
-        print_number(n / 10);
+        count += print_number(n / 10);
         _putchar((n % 10) + '0');
         count++;
     }
