@@ -61,7 +61,7 @@ int print_string(va_list args)
 
     if (!str)
     {
-        str = "(Nil)";
+        str = "(null)";
     }
 
     while (str[i])
