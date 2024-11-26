@@ -11,7 +11,11 @@ int _printf(const char *format, ...)
     va_list args;
     unsigned int i = 0, count = 0;
     char c;
-     
+    
+    if (format == NULL)
+    {
+        return (count);
+    }
 
     va_start(args, format);
 
