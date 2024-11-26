@@ -46,7 +46,7 @@ int _printf(const char *format, ...)
         i++;
     }
     va_end(args);
-    return 0;
+    return (0);
 }
 
 void print_string(va_list args)
