@@ -11,14 +11,10 @@ int _printf(const char *format, ...)
     va_list args;
     unsigned int i = 0;
     char c;
-    unsigned int num_arg = 0;
-
-    num_arg = strlen(format);
-    printf("%d", num_arg);
 
     va_start(args, format);
 
-    while (format && format[i] == '\0')
+    while (format && format[i] != '\0')
     {
         if (format[i] == '%')
         {
