@@ -6,7 +6,7 @@
 
 int print_string(va_list args);
 int print_int(va_list args);
-void print_number(int n, int *count);
+int print_number(int n);
 /**
  * _printf - prints an integer type argument ("int")
  * @format: list of all types of arguments passed
@@ -104,14 +104,13 @@ int print_string(va_list args)
 
 int print_int(va_list args)
 {
-    int count = 0;
     int digit = va_arg(args, int);
-    print_number(digit, &count);
-    return (count);
+    return (print_number(digit));
 }
 
-void print_number(int n, int *count)
+int print_number(int n)
 {
+    int count = 0;
     if (n < 0)
     {
         _putchar('-');
@@ -125,8 +124,9 @@ void print_number(int n, int *count)
     }
     else
     {
-        print_number(n / 10, count);
+        print_number(n / 10);
         _putchar((n % 10) + '0');
         count++;
     }
+    return (count);
 }
