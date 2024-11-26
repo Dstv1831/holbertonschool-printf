@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
     unsigned int i = 0, count = 0;
     char c;
     
-    if (!format)
+    if (!format || format == "%")
     {
         return (-1);
     }
