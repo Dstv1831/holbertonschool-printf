@@ -40,6 +40,8 @@ int _printf(const char *format, ...)
                     count++;
                     i += 2;
                     break;
+                case '\0':
+                    return (-1);
                 default:
                     _putchar('%');
                     count++;
