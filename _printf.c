@@ -3,6 +3,7 @@
 #include <string.h>
 #include "stdarg.h"
 #include <stdlib.h>
+#include <limits.h>
 
 int print_string(va_list args);
 int print_int(va_list args);
@@ -111,11 +112,24 @@ int print_int(va_list args)
 int print_number(int n)
 {
     int count = 0;
+    char *minint = "-2147483648";
     if (n < 0)
     {
+        if (n < -INT_MAX)
+        {
+            while (minint[count])
+            {
+                _putchar(minint[count]);
+                count++;
+            }
+            return (count--);
+        }
+        else
+        {
+            n = -n;
+        }
         _putchar('-');
         count++;
-        n = -n;
     }
     if (n < 10)
     {
