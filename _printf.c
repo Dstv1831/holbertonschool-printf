@@ -8,8 +8,7 @@ int _printf(const char *format, ...)
 {
     va_list args;
     unsigned int i = 0;
-    char *str;
-    // int len; 
+    char c; 
 
     va_start(args, format);
 
@@ -20,7 +19,7 @@ int _printf(const char *format, ...)
             switch (format[i+1])
             {
                 case 'c':
-                    char c = va_arg(args, int);
+		    c = va_arg(args, int);
                     _putchar(c);
                     break;
                 case 's':
