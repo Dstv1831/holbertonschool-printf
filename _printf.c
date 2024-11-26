@@ -29,16 +29,16 @@ int _printf(const char *format, ...)
                     c = va_arg(args, int);
                     _putchar(c);
                     count++;
-                    i += 2;
+                    i += 1;
                     break;
                 case 's':
                     count += print_string(args);
-                    i += 2;
+                    i += 1;
                     break;
                 case '%':
                     _putchar('%');
                     count++;
-                    i += 2;
+                    i += 1;
                     break;
                 default:
                     _putchar('%');
