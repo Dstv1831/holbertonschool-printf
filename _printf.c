@@ -4,13 +4,14 @@
 #include "stdarg.h"
 #include <stdlib.h>
 
-void print_string(va_list args);
+int print_string(va_list args);
 
 int _printf(const char *format, ...)
 {
     va_list args;
-    unsigned int i = 0;
-    char c;
+    unsigned int i = 0, count = 0;
+    char *str;
+     
 
     va_start(args, format);
 
@@ -18,52 +19,56 @@ int _printf(const char *format, ...)
     {
         if (format[i] == '%')
         {
-		i++;
-		switch (format[i])
-		{
-			case 'c':
-				c = va_arg(args, int);
-				_putchar(c);
-				break;
-			case 's':
-				print_string(args);
-				break;
-			case '%':
-				_putchar('%');
-				break;
-			default:
-				break;
-		}
+            switch (format[i+1])
+            {
+                case 'c':
+                    char c = va_arg(args, int);
+                    _putchar(c);
+                    count++;
+                    i += 2;
+                    break;
+                case 's':
+                    count += print_string(args);
+                    i += 2;
+                    break;
+                case '%':
+                    _putchar('%');
+                    count++;
+                    i += 2;
+                    break;
+                default:
+                    _putchar('%');
+                    count++;
+                    i++;
+                    break;
+            }
         }
-	else 
-		_putchar(format[i]);
-	i++;
-
+        else
+        {
+            _putchar(format[i]);
+            count++;
+            i++;
+        }
     }
     va_end(args);
-    return (0);
+    return (count);
 }
 
-void print_string(va_list args)
+int print_string(va_list args)
 {
-    int i = 0;
+    unsigned int i = 0, count = 0;
     char *str = va_arg(args, char *);
 
     if (!str)
     {
         str = "(Nil)";
-        while (str[i] != '\0')
-        {
-            _putchar(str[i]);
-            i++;
-        }
-        return;
     }
 
     while (str[i])
     {
         _putchar(str[i]);
+        count++;
         i++;
     }
-    return;
+    return (count);
 }
