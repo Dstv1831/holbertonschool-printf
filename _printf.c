@@ -6,18 +6,17 @@
 
 
 
-/** print_string - prints an integer type argument ("int")
- * @args: list of all types of arguments passed
- * to the function
- * Return: len.
- */
+
+
 int print_string(va_list args);
 
-/** _printf - prints an integer type argument ("int")
+/**
+ * _printf - prints an integer type argument ("int")
  * @format: list of all types of arguments passed
  * to the function
  * Return: len.
  */
+
 int _printf(const char *format, ...)
 {
 va_list args;
@@ -35,7 +34,7 @@ while (format && format[i] != '\0')
 {
 if (format[i] == '%')
 {
-switch (format[i+1])
+switch (format[i + 1])
 {
 case '\0':
 return (-1);
@@ -71,6 +70,13 @@ i++;
 va_end(args);
 return (count);
 }
+
+/**
+ * print_string - prints an integer type argument ("int")
+ * @args: list of all types of arguments passed
+ * to the function
+ * Return: len.
+ */
 
 int print_string(va_list args)
 {
