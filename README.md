@@ -111,8 +111,10 @@ ___
 
 This README provides a comprehensive overview and is ready for use in your project. Please feel free to contact us regarding any matter (specially about mistakes, recommendations and errors)
 
-Dew - 
-Nigel - 
+Dew -
+
+Nigel - https://github.com/nf626
+
 David - https://github.com/Dstv1831
 
 
