@@ -21,7 +21,7 @@ ___
 1. [Prototype](#prototype)
 2. [Format](#format)
 3. [Supported Specifiers](#supported-specifiers)
-4. [Installation & Usage](#installation--usage)
+4. [Installation & Usage](#installation-&-usage)
 5. [Examples](#examples)
 6. [Limitations](#limitations)
 7. [Contact](#contact)
