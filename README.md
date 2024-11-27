@@ -20,8 +20,8 @@ ___
 
 1. [Prototype](#prototype)
 2. [Format](#format)
-3. [Suppported Specifiers](#suppported-specifiers)
-4. [Installation & Usage](#installation-&-usage)
+3. [Supported Specifiers](#supported-specifiers)
+4. [Instalation & Usage](#instalation-&-usage)
 5. [Examples](#examples)
 6. [Limitations](#limitations)
 7. [Contact](#contact)
