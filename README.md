@@ -63,7 +63,7 @@ ___
 ___
 
 
-## Installation and Use
+## Installation and Usage
 
 * Clone the repository:
 
