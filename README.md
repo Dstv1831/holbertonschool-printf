@@ -19,25 +19,26 @@ ___
 ## Table of Contents
 
 1. [Prototype](#prototype)
-2. Format
-3. Suppported Specifiers
-4. Installation & Usage
-5. Examples
-6. Limitations
-7. Contact
+2. [Format](#format)
+3. [Suppported Specifiers](#suppported-specifiers)
+4. [Installation & Usage](#installation-&-usage)
+5. [Examples](#examples)
+6. [Limitations](#limitations)
+7. [Contact](#contact)
 
 ___
 
 
 ## Prototype
 
-_int_ _/_printf(const char *format, ...);_
+_int_ __printf(const char *format, ...);_
 ____
 
 
 ## Format
 
 _#include <main.h>_
+
 _int printf(const char *format, ...)_
 
 ### Example
