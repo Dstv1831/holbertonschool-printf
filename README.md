@@ -103,7 +103,7 @@ ___
 
 ## Limitations
 
-This lightweight, easy to use implementation relies on the fact that it does not support all specifiers from the standard printf (e.g., %f, %x, %u), nor the flags, width, length or precision modifiers.
+This lightweight and user-friendly implementation focuses on simplicity by supporting a subset of the standard printf specifiers. By omitting specifiers like %f, %x, and %u, as well as flags, width, length, and precision modifiers, it ensures ease of use and optimal performance.
 ___
 
 
@@ -111,9 +111,9 @@ ___
 
 This README provides a comprehensive overview and is ready for use in your project. Please feel free to contact us regarding any matter (specially about mistakes, recommendations and errors)
 
-Dew - githhub link
-Nigel - githhub link
-David - githhub link
+Dew - 
+Nigel - 
+David - https://github.com/Dstv1831
 
 
 
