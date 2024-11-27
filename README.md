@@ -18,7 +18,7 @@ ___
 
 ## Table of Contents
 
-1. Prototype
+1. [Prototype] (#Prototype)
 2. Format
 3. Suppported Specifiers
 4. Installation & Usage
